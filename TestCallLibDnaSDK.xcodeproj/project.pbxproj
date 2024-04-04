@@ -1,0 +1,793 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC017B562BBEFE3A008E7F10 /* EQCoreLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC8496D2A8D0F6A004A0C7B /* EQCoreLib.xcframework */; };
+		CC017B572BBEFE3A008E7F10 /* EQCoreLib.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCC8496D2A8D0F6A004A0C7B /* EQCoreLib.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CC017B5F2BBF0AAF008E7F10 /* dnaSDK-Sim.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC017B5E2BBF0AAF008E7F10 /* dnaSDK-Sim.xcframework */; };
+		CC017B602BBF0AAF008E7F10 /* dnaSDK-Sim.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC017B5E2BBF0AAF008E7F10 /* dnaSDK-Sim.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CCC73CCE2A8D09D000B04AB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC73CCD2A8D09D000B04AB9 /* AppDelegate.swift */; };
+		CCC73CD02A8D09D000B04AB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC73CCF2A8D09D000B04AB9 /* SceneDelegate.swift */; };
+		CCC73CD22A8D09D000B04AB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC73CD12A8D09D000B04AB9 /* ViewController.swift */; };
+		CCC73CD52A8D09D000B04AB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC73CD32A8D09D000B04AB9 /* Main.storyboard */; };
+		CCC73CD82A8D09D000B04AB9 /* TestCallLibDnaSDK.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CCC73CD62A8D09D000B04AB9 /* TestCallLibDnaSDK.xcdatamodeld */; };
+		CCC73CDA2A8D09D100B04AB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC73CD92A8D09D100B04AB9 /* Assets.xcassets */; };
+		CCC73CDD2A8D09D100B04AB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC73CDB2A8D09D100B04AB9 /* LaunchScreen.storyboard */; };
+		CCC73CE82A8D09D200B04AB9 /* TestCallLibDnaSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC73CE72A8D09D200B04AB9 /* TestCallLibDnaSDKTests.swift */; };
+		CCC73CF22A8D09D200B04AB9 /* TestCallLibDnaSDKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC73CF12A8D09D200B04AB9 /* TestCallLibDnaSDKUITests.swift */; };
+		CCC73CF42A8D09D200B04AB9 /* TestCallLibDnaSDKUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC73CF32A8D09D200B04AB9 /* TestCallLibDnaSDKUITestsLaunchTests.swift */; };
+		CCC849852A8D1064004A0C7B /* TicketHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC849712A8D1063004A0C7B /* TicketHistoryViewController.swift */; };
+		CCC849862A8D1064004A0C7B /* APNSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC849722A8D1063004A0C7B /* APNSettingViewController.swift */; };
+		CCC849872A8D1064004A0C7B /* CreateTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC849732A8D1063004A0C7B /* CreateTicketViewController.swift */; };
+		CCC849882A8D1064004A0C7B /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC849742A8D1063004A0C7B /* ResultViewController.swift */; };
+		CCC849892A8D1064004A0C7B /* ResultDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC849752A8D1063004A0C7B /* ResultDetailViewController.swift */; };
+		CCC8498A2A8D1064004A0C7B /* NetworkRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC849762A8D1063004A0C7B /* NetworkRefreshViewController.swift */; };
+		CCC8498B2A8D1064004A0C7B /* CheckQuotaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC849772A8D1063004A0C7B /* CheckQuotaViewController.swift */; };
+		CCC8498C2A8D1064004A0C7B /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC849782A8D1063004A0C7B /* OnboardingViewController.swift */; };
+		CCC8498D2A8D1064004A0C7B /* RecommTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC849792A8D1063004A0C7B /* RecommTableViewCell.swift */; };
+		CCC8498E2A8D1064004A0C7B /* TicketHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC8497A2A8D1063004A0C7B /* TicketHistoryCell.swift */; };
+		CCC8498F2A8D1064004A0C7B /* DetailNetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC8497B2A8D1063004A0C7B /* DetailNetworkViewController.swift */; };
+		CCC849902A8D1064004A0C7B /* NetworkCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC8497C2A8D1063004A0C7B /* NetworkCheckViewController.swift */; };
+		CCC849912A8D1064004A0C7B /* NetworkChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC8497D2A8D1063004A0C7B /* NetworkChangeViewController.swift */; };
+		CCC849922A8D1064004A0C7B /* ResultDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC8497F2A8D1063004A0C7B /* ResultDetailViewModel.swift */; };
+		CCC849932A8D1064004A0C7B /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC849802A8D1063004A0C7B /* ResultViewModel.swift */; };
+		CCC849942A8D1064004A0C7B /* TicketHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC849812A8D1063004A0C7B /* TicketHistoryViewModel.swift */; };
+		CCC849952A8D1064004A0C7B /* CreateTicketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC849822A8D1063004A0C7B /* CreateTicketViewModel.swift */; };
+		CCC849962A8D1064004A0C7B /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC849832A8D1063004A0C7B /* OnboardingViewModel.swift */; };
+		CCC849972A8D1064004A0C7B /* NetworkCheckViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC849842A8D1063004A0C7B /* NetworkCheckViewModel.swift */; };
+		CCC8499A2A8D1099004A0C7B /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = CCC849992A8D1099004A0C7B /* PKHUD */; };
+		CCDA1B4B2AC34F19000D4A53 /* equalone_config.json in Resources */ = {isa = PBXBuildFile; fileRef = CCDA1B4A2AC34F19000D4A53 /* equalone_config.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCC73CE42A8D09D200B04AB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCC73CC22A8D09CF00B04AB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCC73CC92A8D09D000B04AB9;
+			remoteInfo = TestCallLibDnaSDK;
+		};
+		CCC73CEE2A8D09D200B04AB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCC73CC22A8D09CF00B04AB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCC73CC92A8D09D000B04AB9;
+			remoteInfo = TestCallLibDnaSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CC017B552BBEFDFE008E7F10 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CC017B602BBF0AAF008E7F10 /* dnaSDK-Sim.xcframework in Embed Frameworks */,
+				CC017B572BBEFE3A008E7F10 /* EQCoreLib.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CC017B5E2BBF0AAF008E7F10 /* dnaSDK-Sim.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = "dnaSDK-Sim.xcframework"; path = "../../dnasdklib/dnaSDK/dnasdklib_output/dnaSDK-Sim.xcframework"; sourceTree = "<group>"; };
+		CCC73CCA2A8D09D000B04AB9 /* TestCallLibDnaSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCallLibDnaSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCC73CCD2A8D09D000B04AB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CCC73CCF2A8D09D000B04AB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CCC73CD12A8D09D000B04AB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CCC73CD42A8D09D000B04AB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCC73CD72A8D09D000B04AB9 /* TestCallLibDnaSDK.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestCallLibDnaSDK.xcdatamodel; sourceTree = "<group>"; };
+		CCC73CD92A8D09D100B04AB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCC73CDC2A8D09D100B04AB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCC73CDE2A8D09D100B04AB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCC73CE32A8D09D200B04AB9 /* TestCallLibDnaSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCallLibDnaSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCC73CE72A8D09D200B04AB9 /* TestCallLibDnaSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCallLibDnaSDKTests.swift; sourceTree = "<group>"; };
+		CCC73CED2A8D09D200B04AB9 /* TestCallLibDnaSDKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCallLibDnaSDKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCC73CF12A8D09D200B04AB9 /* TestCallLibDnaSDKUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCallLibDnaSDKUITests.swift; sourceTree = "<group>"; };
+		CCC73CF32A8D09D200B04AB9 /* TestCallLibDnaSDKUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCallLibDnaSDKUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CCC8496D2A8D0F6A004A0C7B /* EQCoreLib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = EQCoreLib.xcframework; path = ../../copy_cache/EQ1_SDK/EQCoreLib.xcframework; sourceTree = "<group>"; };
+		CCC849712A8D1063004A0C7B /* TicketHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketHistoryViewController.swift; sourceTree = "<group>"; };
+		CCC849722A8D1063004A0C7B /* APNSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APNSettingViewController.swift; sourceTree = "<group>"; };
+		CCC849732A8D1063004A0C7B /* CreateTicketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTicketViewController.swift; sourceTree = "<group>"; };
+		CCC849742A8D1063004A0C7B /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		CCC849752A8D1063004A0C7B /* ResultDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultDetailViewController.swift; sourceTree = "<group>"; };
+		CCC849762A8D1063004A0C7B /* NetworkRefreshViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRefreshViewController.swift; sourceTree = "<group>"; };
+		CCC849772A8D1063004A0C7B /* CheckQuotaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckQuotaViewController.swift; sourceTree = "<group>"; };
+		CCC849782A8D1063004A0C7B /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		CCC849792A8D1063004A0C7B /* RecommTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommTableViewCell.swift; sourceTree = "<group>"; };
+		CCC8497A2A8D1063004A0C7B /* TicketHistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketHistoryCell.swift; sourceTree = "<group>"; };
+		CCC8497B2A8D1063004A0C7B /* DetailNetworkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailNetworkViewController.swift; sourceTree = "<group>"; };
+		CCC8497C2A8D1063004A0C7B /* NetworkCheckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkCheckViewController.swift; sourceTree = "<group>"; };
+		CCC8497D2A8D1063004A0C7B /* NetworkChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkChangeViewController.swift; sourceTree = "<group>"; };
+		CCC8497F2A8D1063004A0C7B /* ResultDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultDetailViewModel.swift; sourceTree = "<group>"; };
+		CCC849802A8D1063004A0C7B /* ResultViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
+		CCC849812A8D1063004A0C7B /* TicketHistoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketHistoryViewModel.swift; sourceTree = "<group>"; };
+		CCC849822A8D1063004A0C7B /* CreateTicketViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTicketViewModel.swift; sourceTree = "<group>"; };
+		CCC849832A8D1063004A0C7B /* OnboardingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		CCC849842A8D1063004A0C7B /* NetworkCheckViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkCheckViewModel.swift; sourceTree = "<group>"; };
+		CCDA1B4A2AC34F19000D4A53 /* equalone_config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = equalone_config.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCC73CC72A8D09D000B04AB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC017B562BBEFE3A008E7F10 /* EQCoreLib.xcframework in Frameworks */,
+				CCC8499A2A8D1099004A0C7B /* PKHUD in Frameworks */,
+				CC017B5F2BBF0AAF008E7F10 /* dnaSDK-Sim.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCC73CE02A8D09D200B04AB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCC73CEA2A8D09D200B04AB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCC73CC12A8D09CF00B04AB9 = {
+			isa = PBXGroup;
+			children = (
+				CCC73CCC2A8D09D000B04AB9 /* TestCallLibDnaSDK */,
+				CCC73CE62A8D09D200B04AB9 /* TestCallLibDnaSDKTests */,
+				CCC73CF02A8D09D200B04AB9 /* TestCallLibDnaSDKUITests */,
+				CCC73CCB2A8D09D000B04AB9 /* Products */,
+				CCC8496C2A8D0F6A004A0C7B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CCC73CCB2A8D09D000B04AB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCC73CCA2A8D09D000B04AB9 /* TestCallLibDnaSDK.app */,
+				CCC73CE32A8D09D200B04AB9 /* TestCallLibDnaSDKTests.xctest */,
+				CCC73CED2A8D09D200B04AB9 /* TestCallLibDnaSDKUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCC73CCC2A8D09D000B04AB9 /* TestCallLibDnaSDK */ = {
+			isa = PBXGroup;
+			children = (
+				CCDA1B4A2AC34F19000D4A53 /* equalone_config.json */,
+				CCC849702A8D1063004A0C7B /* View */,
+				CCC8497E2A8D1063004A0C7B /* View Model */,
+				CCC73CCD2A8D09D000B04AB9 /* AppDelegate.swift */,
+				CCC73CCF2A8D09D000B04AB9 /* SceneDelegate.swift */,
+				CCC73CD12A8D09D000B04AB9 /* ViewController.swift */,
+				CCC73CD32A8D09D000B04AB9 /* Main.storyboard */,
+				CCC73CD92A8D09D100B04AB9 /* Assets.xcassets */,
+				CCC73CDB2A8D09D100B04AB9 /* LaunchScreen.storyboard */,
+				CCC73CDE2A8D09D100B04AB9 /* Info.plist */,
+				CCC73CD62A8D09D000B04AB9 /* TestCallLibDnaSDK.xcdatamodeld */,
+			);
+			path = TestCallLibDnaSDK;
+			sourceTree = "<group>";
+		};
+		CCC73CE62A8D09D200B04AB9 /* TestCallLibDnaSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCC73CE72A8D09D200B04AB9 /* TestCallLibDnaSDKTests.swift */,
+			);
+			path = TestCallLibDnaSDKTests;
+			sourceTree = "<group>";
+		};
+		CCC73CF02A8D09D200B04AB9 /* TestCallLibDnaSDKUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CCC73CF12A8D09D200B04AB9 /* TestCallLibDnaSDKUITests.swift */,
+				CCC73CF32A8D09D200B04AB9 /* TestCallLibDnaSDKUITestsLaunchTests.swift */,
+			);
+			path = TestCallLibDnaSDKUITests;
+			sourceTree = "<group>";
+		};
+		CCC8496C2A8D0F6A004A0C7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC017B5E2BBF0AAF008E7F10 /* dnaSDK-Sim.xcframework */,
+				CCC8496D2A8D0F6A004A0C7B /* EQCoreLib.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCC849702A8D1063004A0C7B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CCC849712A8D1063004A0C7B /* TicketHistoryViewController.swift */,
+				CCC849722A8D1063004A0C7B /* APNSettingViewController.swift */,
+				CCC849732A8D1063004A0C7B /* CreateTicketViewController.swift */,
+				CCC849742A8D1063004A0C7B /* ResultViewController.swift */,
+				CCC849752A8D1063004A0C7B /* ResultDetailViewController.swift */,
+				CCC849762A8D1063004A0C7B /* NetworkRefreshViewController.swift */,
+				CCC849772A8D1063004A0C7B /* CheckQuotaViewController.swift */,
+				CCC849782A8D1063004A0C7B /* OnboardingViewController.swift */,
+				CCC849792A8D1063004A0C7B /* RecommTableViewCell.swift */,
+				CCC8497A2A8D1063004A0C7B /* TicketHistoryCell.swift */,
+				CCC8497B2A8D1063004A0C7B /* DetailNetworkViewController.swift */,
+				CCC8497C2A8D1063004A0C7B /* NetworkCheckViewController.swift */,
+				CCC8497D2A8D1063004A0C7B /* NetworkChangeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CCC8497E2A8D1063004A0C7B /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				CCC8497F2A8D1063004A0C7B /* ResultDetailViewModel.swift */,
+				CCC849802A8D1063004A0C7B /* ResultViewModel.swift */,
+				CCC849812A8D1063004A0C7B /* TicketHistoryViewModel.swift */,
+				CCC849822A8D1063004A0C7B /* CreateTicketViewModel.swift */,
+				CCC849832A8D1063004A0C7B /* OnboardingViewModel.swift */,
+				CCC849842A8D1063004A0C7B /* NetworkCheckViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCC73CC92A8D09D000B04AB9 /* TestCallLibDnaSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCC73CF72A8D09D200B04AB9 /* Build configuration list for PBXNativeTarget "TestCallLibDnaSDK" */;
+			buildPhases = (
+				CCC73CC62A8D09D000B04AB9 /* Sources */,
+				CCC73CC72A8D09D000B04AB9 /* Frameworks */,
+				CCC73CC82A8D09D000B04AB9 /* Resources */,
+				CC017B552BBEFDFE008E7F10 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestCallLibDnaSDK;
+			packageProductDependencies = (
+				CCC849992A8D1099004A0C7B /* PKHUD */,
+			);
+			productName = TestCallLibDnaSDK;
+			productReference = CCC73CCA2A8D09D000B04AB9 /* TestCallLibDnaSDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCC73CE22A8D09D200B04AB9 /* TestCallLibDnaSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCC73CFA2A8D09D200B04AB9 /* Build configuration list for PBXNativeTarget "TestCallLibDnaSDKTests" */;
+			buildPhases = (
+				CCC73CDF2A8D09D200B04AB9 /* Sources */,
+				CCC73CE02A8D09D200B04AB9 /* Frameworks */,
+				CCC73CE12A8D09D200B04AB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCC73CE52A8D09D200B04AB9 /* PBXTargetDependency */,
+			);
+			name = TestCallLibDnaSDKTests;
+			productName = TestCallLibDnaSDKTests;
+			productReference = CCC73CE32A8D09D200B04AB9 /* TestCallLibDnaSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CCC73CEC2A8D09D200B04AB9 /* TestCallLibDnaSDKUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCC73CFD2A8D09D200B04AB9 /* Build configuration list for PBXNativeTarget "TestCallLibDnaSDKUITests" */;
+			buildPhases = (
+				CCC73CE92A8D09D200B04AB9 /* Sources */,
+				CCC73CEA2A8D09D200B04AB9 /* Frameworks */,
+				CCC73CEB2A8D09D200B04AB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCC73CEF2A8D09D200B04AB9 /* PBXTargetDependency */,
+			);
+			name = TestCallLibDnaSDKUITests;
+			productName = TestCallLibDnaSDKUITests;
+			productReference = CCC73CED2A8D09D200B04AB9 /* TestCallLibDnaSDKUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCC73CC22A8D09CF00B04AB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					CCC73CC92A8D09D000B04AB9 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					CCC73CE22A8D09D200B04AB9 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = CCC73CC92A8D09D000B04AB9;
+					};
+					CCC73CEC2A8D09D200B04AB9 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = CCC73CC92A8D09D000B04AB9;
+					};
+				};
+			};
+			buildConfigurationList = CCC73CC52A8D09CF00B04AB9 /* Build configuration list for PBXProject "TestCallLibDnaSDK" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCC73CC12A8D09CF00B04AB9;
+			packageReferences = (
+				CCC849982A8D1099004A0C7B /* XCRemoteSwiftPackageReference "PKHUD" */,
+			);
+			productRefGroup = CCC73CCB2A8D09D000B04AB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCC73CC92A8D09D000B04AB9 /* TestCallLibDnaSDK */,
+				CCC73CE22A8D09D200B04AB9 /* TestCallLibDnaSDKTests */,
+				CCC73CEC2A8D09D200B04AB9 /* TestCallLibDnaSDKUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCC73CC82A8D09D000B04AB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCC73CDD2A8D09D100B04AB9 /* LaunchScreen.storyboard in Resources */,
+				CCC73CDA2A8D09D100B04AB9 /* Assets.xcassets in Resources */,
+				CCC73CD52A8D09D000B04AB9 /* Main.storyboard in Resources */,
+				CCDA1B4B2AC34F19000D4A53 /* equalone_config.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCC73CE12A8D09D200B04AB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCC73CEB2A8D09D200B04AB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCC73CC62A8D09D000B04AB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCC849922A8D1064004A0C7B /* ResultDetailViewModel.swift in Sources */,
+				CCC849912A8D1064004A0C7B /* NetworkChangeViewController.swift in Sources */,
+				CCC849852A8D1064004A0C7B /* TicketHistoryViewController.swift in Sources */,
+				CCC8498B2A8D1064004A0C7B /* CheckQuotaViewController.swift in Sources */,
+				CCC8498F2A8D1064004A0C7B /* DetailNetworkViewController.swift in Sources */,
+				CCC8498A2A8D1064004A0C7B /* NetworkRefreshViewController.swift in Sources */,
+				CCC849972A8D1064004A0C7B /* NetworkCheckViewModel.swift in Sources */,
+				CCC849902A8D1064004A0C7B /* NetworkCheckViewController.swift in Sources */,
+				CCC73CD22A8D09D000B04AB9 /* ViewController.swift in Sources */,
+				CCC849932A8D1064004A0C7B /* ResultViewModel.swift in Sources */,
+				CCC849942A8D1064004A0C7B /* TicketHistoryViewModel.swift in Sources */,
+				CCC849872A8D1064004A0C7B /* CreateTicketViewController.swift in Sources */,
+				CCC849892A8D1064004A0C7B /* ResultDetailViewController.swift in Sources */,
+				CCC849882A8D1064004A0C7B /* ResultViewController.swift in Sources */,
+				CCC8498C2A8D1064004A0C7B /* OnboardingViewController.swift in Sources */,
+				CCC73CCE2A8D09D000B04AB9 /* AppDelegate.swift in Sources */,
+				CCC8498D2A8D1064004A0C7B /* RecommTableViewCell.swift in Sources */,
+				CCC8498E2A8D1064004A0C7B /* TicketHistoryCell.swift in Sources */,
+				CCC73CD82A8D09D000B04AB9 /* TestCallLibDnaSDK.xcdatamodeld in Sources */,
+				CCC849952A8D1064004A0C7B /* CreateTicketViewModel.swift in Sources */,
+				CCC849962A8D1064004A0C7B /* OnboardingViewModel.swift in Sources */,
+				CCC73CD02A8D09D000B04AB9 /* SceneDelegate.swift in Sources */,
+				CCC849862A8D1064004A0C7B /* APNSettingViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCC73CDF2A8D09D200B04AB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCC73CE82A8D09D200B04AB9 /* TestCallLibDnaSDKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCC73CE92A8D09D200B04AB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCC73CF22A8D09D200B04AB9 /* TestCallLibDnaSDKUITests.swift in Sources */,
+				CCC73CF42A8D09D200B04AB9 /* TestCallLibDnaSDKUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCC73CE52A8D09D200B04AB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCC73CC92A8D09D000B04AB9 /* TestCallLibDnaSDK */;
+			targetProxy = CCC73CE42A8D09D200B04AB9 /* PBXContainerItemProxy */;
+		};
+		CCC73CEF2A8D09D200B04AB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCC73CC92A8D09D000B04AB9 /* TestCallLibDnaSDK */;
+			targetProxy = CCC73CEE2A8D09D200B04AB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCC73CD32A8D09D000B04AB9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCC73CD42A8D09D000B04AB9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCC73CDB2A8D09D100B04AB9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCC73CDC2A8D09D100B04AB9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCC73CF52A8D09D200B04AB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CCC73CF62A8D09D200B04AB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCC73CF82A8D09D200B04AB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WJKS793DH5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestCallLibDnaSDK",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestCallLibDnaSDK/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.call.lib.dna.sdk.TestCallLibDnaSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCC73CF92A8D09D200B04AB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WJKS793DH5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestCallLibDnaSDK",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestCallLibDnaSDK/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.call.lib.dna.sdk.TestCallLibDnaSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CCC73CFB2A8D09D200B04AB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.call.lib.dna.sdk.TestCallLibDnaSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestCallLibDnaSDK.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestCallLibDnaSDK";
+			};
+			name = Debug;
+		};
+		CCC73CFC2A8D09D200B04AB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.call.lib.dna.sdk.TestCallLibDnaSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestCallLibDnaSDK.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestCallLibDnaSDK";
+			};
+			name = Release;
+		};
+		CCC73CFE2A8D09D200B04AB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.call.lib.dna.sdk.TestCallLibDnaSDKUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestCallLibDnaSDK;
+			};
+			name = Debug;
+		};
+		CCC73CFF2A8D09D200B04AB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.call.lib.dna.sdk.TestCallLibDnaSDKUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestCallLibDnaSDK;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCC73CC52A8D09CF00B04AB9 /* Build configuration list for PBXProject "TestCallLibDnaSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCC73CF52A8D09D200B04AB9 /* Debug */,
+				CCC73CF62A8D09D200B04AB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCC73CF72A8D09D200B04AB9 /* Build configuration list for PBXNativeTarget "TestCallLibDnaSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCC73CF82A8D09D200B04AB9 /* Debug */,
+				CCC73CF92A8D09D200B04AB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCC73CFA2A8D09D200B04AB9 /* Build configuration list for PBXNativeTarget "TestCallLibDnaSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCC73CFB2A8D09D200B04AB9 /* Debug */,
+				CCC73CFC2A8D09D200B04AB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCC73CFD2A8D09D200B04AB9 /* Build configuration list for PBXNativeTarget "TestCallLibDnaSDKUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCC73CFE2A8D09D200B04AB9 /* Debug */,
+				CCC73CFF2A8D09D200B04AB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CCC849982A8D1099004A0C7B /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CCC849992A8D1099004A0C7B /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCC849982A8D1099004A0C7B /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		CCC73CD62A8D09D000B04AB9 /* TestCallLibDnaSDK.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CCC73CD72A8D09D000B04AB9 /* TestCallLibDnaSDK.xcdatamodel */,
+			);
+			currentVersion = CCC73CD72A8D09D000B04AB9 /* TestCallLibDnaSDK.xcdatamodel */;
+			path = TestCallLibDnaSDK.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CCC73CC22A8D09CF00B04AB9 /* Project object */;
+}
